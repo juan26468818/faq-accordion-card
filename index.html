@@ -5,30 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ accordion card</title>
-    <link type="stylesheer" href="./main.css">
+    <link rel="stylesheet" href="./main.css">
     <script defer src="./script.js"></script>
     <link rel="icon" type="image/x-icon" href="/img/favicon-32x32.png">
+    <!--Fonts imported from Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
-        <div>
+        <div class="main__img-container">
             <!-- <img src="./img/illustration-woman-online-desktop.svg"> -->
-            <img src="./img/illustration-box-desktop.svg">
+            <img src="./img/illustration-box-desktop.svg" class="illustration-box-img">
         </div>
-        <div>
+        <div class="main__faq-container">
             <h1>FAQ</h1>
-            <ul>
-                <li>How many team members can I invite?<img src="./img/icon-arrow-down.svg"></li>
-                <p>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
-                <li>What is the maximum file upload size?<img src="./img/icon-arrow-down.svg"></li>
-                <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
-                <li>How do I reset my password?<img src="./img/icon-arrow-down.svg"></li>
-                <p>Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
-                <li>Can I cancel my subscription?<img src="./img/icon-arrow-down.svg"></li>
-                <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
-                <li>Do you provide addicional support?<img src="./img/icon-arrow-down.svg"></li>
-                <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
-            </ul>
+            <div class="q-container">
+                <div class="i-q-container">
+                    <button>How many team members can I invite? <img src="./img/icon-arrow-down.svg"></button>
+                    <p class="answer">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+                </div>
+
+                <div class="i-q-container">
+                    <button>What is the maximum file upload size?<img src="./img/icon-arrow-down.svg"></button>
+                    <p class="answer active">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+                </div>
+
+                <div class="i-q-container">
+                    <button>How do I reset my password?<img src="./img/icon-arrow-down.svg"></button>
+                    <p class="answer">Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
+                </div>
+
+                <div class="i-q-container">
+                    <button>Can I cancel my subscription?<img src="./img/icon-arrow-down.svg"></button>
+                    <p class="answer">Yes! Send us a message and we’ll process your request no questions asked.</p>
+                </div>
+
+                <div class="i-q-container">
+                    <button>Do you provide addicional support?<img src="./img/icon-arrow-down.svg"></button>
+                    <p class="answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+                </div>
+            </div>
         </div>
     </main>
 </body>
