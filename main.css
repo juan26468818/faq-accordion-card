@@ -13,13 +13,12 @@ html{
     --Light-grayish-blue: hsl(240, 5%, 91%);
 }
 body{
-    width: 100vw;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-repeat: no-repeat;
     background-image: url("./img/bg-pattern-desktop.svg"), linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
     background-size: contain;
     padding: 2rem;
 }
@@ -27,7 +26,7 @@ main{
     display: flex;
     width: 60rem;
     min-height: 40rem;
-    background-color: white;
+    background-color: var(--Light-grayish-blue);
     border-radius: 2rem;
     box-shadow: -1px 20px 72px -19px rgba(29,30,53,0.75);
     -webkit-box-shadow: -1px 20px 72px -19px rgba(29,30,53,0.75);
@@ -36,7 +35,6 @@ main{
 .main__img-container{
     position: relative;
     flex-basis: 100%;
-    width: 10rem;
     background-image: url("./img/illustration-woman-online-desktop.svg");
     background-size: 120%;
     background-repeat: no-repeat;
@@ -55,14 +53,12 @@ main{
 }
 h1{
     color: var(--Very-dark-desaturated-blue);
-    font-size: 2rem;
 }
 .q-container{
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 1rem 0;
+    justify-content: space-evenly;
     
 }
 button{
@@ -108,11 +104,14 @@ p{
     }
     .illustration-box-img{
         width: 70%;
-        top: -80%;
+        top: -65%;
         left: 15%;
     }
     .main__faq-container{
         padding: 0 2rem;
         padding-bottom: 5rem;
+    }
+    button{
+        text-align: left;
     }
 }
