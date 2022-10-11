@@ -7,7 +7,7 @@ const active = (e) =>{
     arrowImg[e-1].className += " active-i";
     button[e-1].className += " active-b";
     answer[e-1].className += " active-p";
-    if(activeQuestion !== 0) {
+    if(activeQuestion !== 0 && e !== activeQuestion) {
         button[activeQuestion-1].classList.remove("active-b")
         answer[activeQuestion-1].classList.remove("active-p")
         arrowImg[activeQuestion-1].classList.remove("active-i")
