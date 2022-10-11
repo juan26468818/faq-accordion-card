@@ -13,16 +13,19 @@ html{
     --Light-grayish-blue: hsl(240, 5%, 91%);
 }
 body{
+    width: 100vw;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-repeat: no-repeat;
     background-image: url("./img/bg-pattern-desktop.svg"), linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-    background-size: 100%;
+    background-size: contain;
+    padding: 2rem;
 }
 main{
     display: flex;
-    max-width: 70rem;
+    width: 60rem;
     min-height: 40rem;
     background-color: white;
     border-radius: 2rem;
@@ -33,16 +36,17 @@ main{
 .main__img-container{
     position: relative;
     flex-basis: 100%;
-    width: 100rem;
+    width: 10rem;
     background-image: url("./img/illustration-woman-online-desktop.svg");
     background-size: 120%;
     background-repeat: no-repeat;
-    background-position: left -6.8rem top 50%;
+    background-position: left -6rem top 35%;
 }
 .illustration-box-img{
+    width: 50%;
     position: absolute;
-    top: 40%;
-    left: -11rem;
+    top: 36%;
+    left: -6.6rem;
     filter: drop-shadow(0 0 0 var(--Very-dark-grayish-blue));
 }
 .main__faq-container{
@@ -73,14 +77,42 @@ button:hover{
     color: var(--Soft-red);
 }
 p{
-    /* margin-bottom: 2rem; */
     color: var(--Dark-grayish-blue);
 }
 .answer{
     display: none;
 }
-.active{
+.active-p{
     display: block;
     padding-top: 1rem;
-    /* font-weight: bold; */
+}
+.active-b{
+    font-weight: bold;
+}
+.active-i{
+    transform: scaleY(-1);    
+}
+@media (max-width:860px){
+    body{
+        background-image: url("./img/bg-pattern-mobile.svg"), linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    }
+    main{
+        flex-wrap: wrap;
+        margin-top: 30%;
+    }
+    .main__img-container{
+        background-image: none;
+    }
+    h1{
+        text-align: center;
+    }
+    .illustration-box-img{
+        width: 70%;
+        top: -80%;
+        left: 15%;
+    }
+    .main__faq-container{
+        padding: 0 2rem;
+        padding-bottom: 5rem;
+    }
 }
